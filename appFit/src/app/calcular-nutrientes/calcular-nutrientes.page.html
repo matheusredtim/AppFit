@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Calcular Nutrientes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content>
+    <ion-grid>
+      <ion-row> 
+        <ion-col>
+          <ion-item>        
+          <ion-label position="floating">Peso</ion-label>
+          <ion-input [(ngModel)]='nutrientes.peso' type='number'></ion-input>
+          </ion-item>
+          <ion-item>        
+          <ion-label position="floating">Tipo De Exercicios (leves)(moderados)(intensos)</ion-label>
+          <ion-input [(ngModel)]='nutrientes.tipoAtividade' type='text'></ion-input>
+          </ion-item>
+          
+        <ion-button expand="full"(click)='calcularnutriente()'>Calcular</ion-button>
+        <ion-iten>Resultado</ion-iten><br>
+        <ion-item>
+          <ion-label position="floating">Carboidrato</ion-label>
+          <ion-input [(ngModel)]='nutrientes.carboidrato'></ion-input>
+          </ion-item> 
+        <ion-item>
+          <ion-label position="floating">Proteina</ion-label>
+          <ion-input [(ngModel)]='nutrientes.proteina'></ion-input>
+          </ion-item> 
+        <ion-item>
+          <ion-label position="floating">Gordura</ion-label>
+          <ion-input [(ngModel)]='nutrientes.gordura'></ion-input>
+          </ion-item> 
+         </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+  
+  </ion-content>

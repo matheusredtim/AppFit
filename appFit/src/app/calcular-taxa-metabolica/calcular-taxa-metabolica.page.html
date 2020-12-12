@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>CalcularTaxaMetabolica</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row> 
+      <ion-col>
+        <ion-item>        
+        <ion-label position="floating">Peso</ion-label>
+        <ion-input [(ngModel)]='taxaMetabolica.peso' type='number'></ion-input>
+        </ion-item>
+        <ion-item>        
+        <ion-label position="floating">altura (cm)</ion-label>
+        <ion-input [(ngModel)]='taxaMetabolica.altura' type='number'></ion-input>
+        </ion-item>
+        <ion-item>        
+        <ion-label position="floating">Idade</ion-label>
+        <ion-input [(ngModel)]='taxaMetabolica.idade' type='number'></ion-input>
+        </ion-item>
+        <ion-item>        
+        <ion-label position="floating">Genero (M) ou (F)</ion-label>
+        <ion-input [(ngModel)]='taxaMetabolica.genero' type='text'></ion-input>
+        </ion-item>
+        
+      <ion-button expand="full"(click)='calcular()'>Calcular</ion-button>
+      <ion-iten>Resultado</ion-iten><br>
+      <ion-item>
+        <ion-input [(ngModel)]='taxaMetabolica.resultado'></ion-input>
+        </ion-item> 
+       </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>
