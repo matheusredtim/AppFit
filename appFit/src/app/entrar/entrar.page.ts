@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Usuario } from 'src/models/usuario';
 import { UsuarioService } from 'src/services/UsuarioService';
 
@@ -10,6 +11,7 @@ import { UsuarioService } from 'src/services/UsuarioService';
 export class EntrarPage implements OnInit {
 
   public usuario : Usuario = new Usuario()
+
   constructor(private _usuarioService:UsuarioService) {
     
    }
@@ -17,7 +19,8 @@ export class EntrarPage implements OnInit {
   ngOnInit() {
   }
     registrar(){
-
+      
+      
       this._usuarioService.entrar(this.usuario);
       
   }
