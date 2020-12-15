@@ -8,13 +8,13 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { UsuarioService } from 'src/services/UsuarioService';
 import { CaloriasService } from 'src/services/CaloriasService';
 import { NutrientesService } from 'src/services/NutrientesService';
 import { TaxaMetabolicaService } from 'src/services/TaxaMetabolicaService';
 import { TreinoService } from 'src/services/TreinoService';
 
 import {HttpClientModule} from '@angular/common/http'
+import { RmfService } from 'src/services/RmfService';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,7 +26,7 @@ import {HttpClientModule} from '@angular/common/http'
     HttpClientModule
   ],
   providers: [
-    UsuarioService,
+    RmfService,
     CaloriasService,
     NutrientesService,
     TaxaMetabolicaService,

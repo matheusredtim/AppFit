@@ -12,11 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
-    {
-      title: 'Entrar',
-      url: '/entrar',
-      icon: 'person-circle'
-    },
+
     {
       title: 'Calcular Calorias ',
       url: '/calcular-calorias',
@@ -36,6 +32,11 @@ export class AppComponent implements OnInit {
       title: 'Gerar Treino',
       url: '/gerar-treino',
       icon: 'barbell'
+    },
+    {
+      title: 'Calcular % de Gordura',
+      url: '/calcular-rmf',
+      icon: 'accessibility'
     }
     
   ];

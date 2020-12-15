@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { EntrarPage } from './entrar.page';
+import { CalcularRmfPage } from './calcular-rmf.page';
 
-describe('EntrarPage', () => {
-  let component: EntrarPage;
-  let fixture: ComponentFixture<EntrarPage>;
+describe('CalcularRmfPage', () => {
+  let component: CalcularRmfPage;
+  let fixture: ComponentFixture<CalcularRmfPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EntrarPage ],
+      declarations: [ CalcularRmfPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(EntrarPage);
+    fixture = TestBed.createComponent(CalcularRmfPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

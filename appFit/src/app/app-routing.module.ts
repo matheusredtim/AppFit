@@ -4,16 +4,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'entrar',
+    redirectTo: 'gerar-treino',
     pathMatch: 'full'
-  },
-  {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
-  },
-  {
-    path: 'entrar',
-    loadChildren: () => import('./entrar/entrar.module').then( m => m.EntrarPageModule)
   },
   {
     path: 'calcular-calorias',
@@ -30,6 +22,14 @@ const routes: Routes = [
   {
     path: 'calcular-taxa-metabolica',
     loadChildren: () => import('./calcular-taxa-metabolica/calcular-taxa-metabolica.module').then( m => m.CalcularTaxaMetabolicaPageModule)
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
+  {
+    path: 'calcular-rmf',
+    loadChildren: () => import('./calcular-rmf/calcular-rmf.module').then( m => m.CalcularRmfPageModule)
   }
 ];
 
