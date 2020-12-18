@@ -16,10 +16,12 @@ export class RmfService implements IRmfService{
             if(!rmf.genero) throw new Error ("preencha o campo genero corretamente")
             if(rmf.genero == 'M'){
                 rmf.resultado = 64-(20*(rmf.altura/rmf.cincunferenciaCintura))
+                rmf.resultado = parseFloat(rmf.resultado .toFixed(2))
                  
             }
             if(rmf.genero == 'F'){   
                 rmf.resultado = 76-(20*(rmf.altura/rmf.cincunferenciaCintura))
+                rmf.resultado = parseFloat(rmf.resultado .toFixed(2))
             }
                 return rmf.resultado
             throw new Error('Method not implemented.');
